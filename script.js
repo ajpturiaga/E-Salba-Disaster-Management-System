@@ -12,9 +12,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const navMenu = document.getElementById("navMenu") || document.getElementById("nav-menu") || document.querySelector(".nav-menu");
 
     if (menuToggle && navMenu) {
-        menuToggle.addEventListener("click", function (e) {
+        const toggleMenu = function (e) {
             e.preventDefault();
             e.stopPropagation();
+
             navMenu.classList.toggle("show");
             menuToggle.classList.toggle("active");
 
@@ -28,10 +29,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     icon.classList.add("fa-bars");
                 }
             }
-        });
+        };
 
-        // Close navigation dropdown when clicking anywhere outside
-        document.addEventListener("click", function (e) {
+        // Event listeners for desktop click & mobile touch
+        menuToggle.addEventListener("click", toggleMenu);
+        menuToggle.addEventListener("touchstart", toggleMenu, { passive: false });
+
+        // Close navigation dropdown when clicking or tapping outside
+        const closeMenuOutside = function (e) {
             if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
                 navMenu.classList.remove("show");
                 menuToggle.classList.remove("active");
@@ -42,7 +47,10 @@ document.addEventListener("DOMContentLoaded", function () {
                     icon.classList.add("fa-bars");
                 }
             }
-        });
+        };
+
+        document.addEventListener("click", closeMenuOutside);
+        document.addEventListener("touchstart", closeMenuOutside, { passive: true });
     }
 
 

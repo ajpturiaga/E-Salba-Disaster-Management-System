@@ -1775,3 +1775,25 @@ textarea {
         z-index: 1001;
     }
 }
+
+/* Ensure header container allows the menu to overflow and stack on top */
+header, .header, .nav-container, .navbar {
+    position: relative !important;
+    overflow: visible !important;
+    z-index: 10000 !important;
+}
+
+/* Force mobile dropdown visibility */
+.nav-menu.show {
+    display: flex !important;
+    flex-direction: column !important;
+    position: absolute !important;
+    top: 100% !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    background-color: #ffffff !important;
+    padding: 20px !important;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2) !important;
+    z-index: 10001 !important;
+}
