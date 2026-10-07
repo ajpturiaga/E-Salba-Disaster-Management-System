@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Emergency Request | E-Salba</title>
+    <link rel="icon" type="image/png" href="Assets/ESalbaIcon.png"> 
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <img src="Assets/ESalbaLogo.png" alt="E-Salba Logo" class="logo-img">
+        </a>
+
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="how-it-works.html">How It Works</a>
+
+            <a href="emergency-request.html"
+               class="emergency-link active">
+                Emergency Request
+            </a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="login.html" class="nav-login">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Login
+            </a>
+
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<section class="inner-hero emergency-hero">
+
+    <div class="container">
+
+        <span class="section-tag">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+            EMERGENCY REQUEST
+        </span>
+
+        <h1>
+            Request
+            <span>assistance.</span>
+        </h1>
+
+        <p>
+            Provide accurate information so responders can
+            understand and address your situation.
+        </p>
+
+    </div>
+
+</section>
+
+
+<section class="section">
+
+    <div class="container emergency-layout">
+
+
+        <div class="emergency-info">
+
+            <div class="emergency-warning">
+
+                <i class="fa-solid fa-triangle-exclamation"></i>
+
+                <div>
+
+                    <strong>Important</strong>
+
+                    <p>
+                        If you are in immediate life-threatening
+                        danger, contact your local emergency
+                        services first.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <h2>
+                Tell us what
+                <span>you need.</span>
+            </h2>
+
+            <p>
+                Complete the form with as much accurate
+                information as possible.
+            </p>
+
+
+            <div class="emergency-benefits">
+
+                <div>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <div>
+                        <strong>Accurate Location</strong>
+                        <span>Help responders find you.</span>
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-file-lines"></i>
+
+                    <div>
+                        <strong>Clear Information</strong>
+                        <span>Explain the emergency clearly.</span>
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <i class="fa-solid fa-user-shield"></i>
+
+                    <div>
+                        <strong>Coordinated Response</strong>
+                        <span>Connect with available responders.</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="form-card">
+
+            <div class="form-header">
+
+                <span class="section-tag">
+                    EMERGENCY DETAILS
+                </span>
+
+                <h3>
+                    Emergency Request Form
+                </h3>
+
+            </div>
+
+
+            <form id="emergencyForm">
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label>
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Enter your full name"
+                            required
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>
+                            Contact Number
+                        </label>
+
+                        <input
+                            type="tel"
+                            placeholder="09XX XXX XXXX"
+                            required
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Emergency Type
+                    </label>
+
+                    <select required>
+
+                        <option value="">
+                            Select emergency type
+                        </option>
+
+                        <option>Flood</option>
+                        <option>Earthquake</option>
+                        <option>Fire</option>
+                        <option>Landslide</option>
+                        <option>Typhoon</option>
+                        <option>Medical Emergency</option>
+                        <option>Rescue</option>
+                        <option>Other</option>
+
+                    </select>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Location
+                    </label>
+
+                    <input
+                        type="text"
+                        placeholder="Enter your current location"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Number of People Affected
+                    </label>
+
+                    <input
+                        type="number"
+                        min="1"
+                        placeholder="e.g. 3"
+                        required
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Emergency Description
+                    </label>
+
+                    <textarea
+                        rows="5"
+                        placeholder="Describe the situation..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+                <label class="checkbox-label">
+
+                    <input type="checkbox" required>
+
+                    <span>
+                        I confirm that the information provided
+                        is accurate to the best of my knowledge.
+                    </span>
+
+                </label>
+
+
+                <button type="submit" class="btn btn-primary full-width">
+
+                    <i class="fa-solid fa-paper-plane"></i>
+
+                    Submit Emergency Request
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo footer-logo">
+                <img src="Assets/SystemLogo.png" alt="E-Salba Logo" class="logo-img">
+            </a>
+
+            <p>
+                Organized disaster response starts with
+                better communication.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Platform</h4>
+
+            <a href="about.html">About</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="emergency-request.html">Emergency Request</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Account</h4>
+
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Support</h4>
+
+            <a href="contact.html">Contact</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>© 2026 E-Salba. All Rights Reserved.</span>
+
+        <span>Disaster Management System</span>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

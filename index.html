@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>E-Salba</title>
+    <link rel="icon" type="image/png" href="Assets/ESalbaIcon">
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- navigation bar -->
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            <img src="Assets/ESalbaLogo.png" alt="E-Salba Logo" class="logo-img">
+        </a>
+
+        <nav class="nav-menu" id="navMenu">
+
+            <a href="index.html" class="active">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="how-it-works.html">How It Works</a>
+
+            <a href="emergency-request.html" class="emergency-link">
+                Emergency Request
+            </a>
+
+            <a href="contact.html">Contact</a>
+
+            <a href="login.html" class="nav-login">
+                <i class="fa-solid fa-right-to-bracket"></i>
+                Login
+            </a>
+
+        </nav>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+</header>
+
+
+<!--hero -->
+
+<main>
+
+<section class="hero">
+
+    <div class="hero-bg-circle circle-one"></div>
+    <div class="hero-bg-circle circle-two"></div>
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <div class="status-badge">
+                <span class="status-dot"></span>
+                Disaster Response System
+            </div>
+
+            <h1>
+                Dito sa E-Salba,
+                <span>Safe na Safe Ka!</span>
+            </h1>
+
+            <p>
+                E-Salba connects people in need with trained volunteers
+                and administrators for faster, organized, and reliable
+                disaster response.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="emergency-request.html" class="btn btn-primary">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                    Request Emergency Help
+                </a>
+
+                <a href="how-it-works.html" class="btn btn-outline">
+                    How It Works
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <div class="hero-trust">
+
+                <div class="trust-item">
+                    <i class="fa-solid fa-users"></i>
+                    <div>
+                        <strong>Community</strong>
+                        <span>Powered</span>
+                    </div>
+                </div>
+
+                <div class="trust-line"></div>
+
+                <div class="trust-item">
+                    <i class="fa-solid fa-bolt"></i>
+                    <div>
+                        <strong>Fast</strong>
+                        <span>Response</span>
+                    </div>
+                </div>
+
+                <div class="trust-line"></div>
+
+                <div class="trust-item">
+                    <i class="fa-solid fa-shield-halved"></i>
+                    <div>
+                        <strong>Reliable</strong>
+                        <span>Support</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- hero visual -->
+
+        <div class="hero-visual">
+
+            <div class="glass-dashboard">
+
+                <div class="dashboard-top">
+
+                    <div>
+                        <span class="mini-label">Emergency Status</span>
+                        <h3>Response Center</h3>
+                    </div>
+
+                    <span class="online-status">
+                        <span></span>
+                        Online
+                    </span>
+
+                </div>
+
+
+                <div class="response-card">
+
+                    <div class="response-icon">
+                        <i class="fa-solid fa-house-flood-water"></i>
+                    </div>
+
+                    <div class="response-info">
+                        <span>Active Request</span>
+                        <strong>Flood Assistance</strong>
+                        <small>
+                            <i class="fa-solid fa-location-dot"></i>
+                            Bataan, Philippines
+                        </small>
+                    </div>
+
+                    <span class="priority">
+                        HIGH
+                    </span>
+
+                </div>
+
+
+                <div class="response-card">
+
+                    <div class="response-icon success">
+                        <i class="fa-solid fa-person-circle-check"></i>
+                    </div>
+
+                    <div class="response-info">
+                        <span>Volunteer Status</span>
+                        <strong>Volunteers Available</strong>
+                        <small>
+                            <i class="fa-solid fa-users"></i>
+                            24 volunteers nearby
+                        </small>
+                    </div>
+
+                    <span class="available">
+                        READY
+                    </span>
+
+                </div>
+
+
+                <div class="dashboard-stats">
+
+                    <div>
+                        <strong>128</strong>
+                        <span>Requests</span>
+                    </div>
+
+                    <div>
+                        <strong>96</strong>
+                        <span>Resolved</span>
+                    </div>
+
+                    <div>
+                        <strong>24</strong>
+                        <span>Volunteers</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="floating-alert">
+
+                <div class="floating-icon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <div>
+                    <strong>Emergency Alert</strong>
+                    <span>Help request received</span>
+                </div>
+
+                <i class="fa-solid fa-check alert-check"></i>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- features -->
+
+<section class="section features-section">
+
+    <div class="container">
+
+        <div class="section-heading center">
+
+            <span class="section-tag">
+                <i class="fa-solid fa-shield-halved"></i>
+                WHY E-SALBA
+            </span>
+
+            <h2>
+                Built for <span>faster response.</span>
+            </h2>
+
+            <p>
+                A centralized disaster management platform designed
+                to connect communities, volunteers, and administrators.
+            </p>
+
+        </div>
+
+
+        <div class="feature-grid">
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-triangle-exclamation"></i>
+                </div>
+
+                <h3>Emergency Requests</h3>
+
+                <p>
+                    Submit emergency requests and provide important
+                    information so responders can act quickly.
+                </p>
+
+                <a href="emergency-request.html">
+                    Request Help
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-users"></i>
+                </div>
+
+                <h3>Volunteer Coordination</h3>
+
+                <p>
+                    Connect available volunteers with people and
+                    communities that need assistance.
+                </p>
+
+                <a href="register.html">
+                    Become a Volunteer
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-bell"></i>
+                </div>
+
+                <h3>Emergency Alerts</h3>
+
+                <p>
+                    Receive important emergency notifications and
+                    updates about assigned disaster cases.
+                </p>
+
+                <a href="login.html">
+                    Access Alerts
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+
+            <article class="feature-card">
+
+                <div class="feature-icon">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+
+                <h3>Organized Response</h3>
+
+                <p>
+                    Administrators can monitor requests, volunteers,
+                    assignments, and emergency situations.
+                </p>
+
+                <a href="about.html">
+                    Learn More
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- cta section -->
+
+<section class="cta-section">
+
+    <div class="container">
+
+        <div class="cta-card">
+
+            <div class="cta-content">
+
+                <span class="section-tag light">
+                    NEED IMMEDIATE ASSISTANCE?
+                </span>
+
+                <h2>
+                    Your safety matters.
+                    <br>
+                    <span>Request help now.</span>
+                </h2>
+
+                <p>
+                    If you or someone near you needs emergency
+                    assistance, submit a request through E-Salba.
+                </p>
+
+                <a href="emergency-request.html" class="btn btn-white">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    Request Emergency Help
+                </a>
+
+            </div>
+
+            <div class="cta-icon">
+                <i class="fa-solid fa-life-ring"></i>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- footer -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+            <a href="index.html" class="logo footer-logo">
+                <img src="Assets/NoBGLogo.png" alt="E-Salba Logo" class="logo-img">
+            </a>
+
+            <p>
+                Connecting communities and volunteers for
+                organized and responsive disaster management.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Platform</h4>
+
+            <a href="about.html">About E-Salba</a>
+            <a href="how-it-works.html">How It Works</a>
+            <a href="emergency-request.html">Emergency Request</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Account</h4>
+
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4>Support</h4>
+
+            <a href="contact.html">Contact Us</a>
+            <a href="contact.html">Help Center</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="container footer-bottom">
+
+        <span>
+            © 2026 E-Salba. All Rights Reserved.
+        </span>
+
+        <span>
+            Disaster Management System
+        </span>
+
+    </div>
+
+</footer>
+
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
